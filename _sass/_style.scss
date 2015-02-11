@@ -1,0 +1,74 @@
+////////////////////////////////
+// base
+
+html, body, h1, h2, p {
+  font-size: $base-font-size;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans GB",
+  "Source Han Sans", "Arial", sans-serif;
+  line-height: $v;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a { text-decoration: none; transition: color .15s linear; }
+a, a:visited { color: $grey; }
+a:hover { color: $highlight; text-decoration: none; }
+
+////////////////////////////////
+// content
+
+.meta, .title {
+  margin-bottom: $v;
+}
+
+.post {
+  margin-bottom: $v*2;
+}
+
+.post p + p {
+  text-indent: 1em;
+}
+
+////////////////////////////////
+// header
+
+.site-header {
+  margin: $v*5 0 $v*3;
+}
+
+.site-title {
+  font-weight: normal;
+  text-transform: uppercase;
+  // letter-spacing: 0.2em;
+}
+
+////////////////////////////////
+// footer
+
+.site-footer {
+  margin-bottom: $v*2;
+  // font-variant: small-caps;
+  letter-spacing: 1.5px;
+}
+
+.footer-link + .footer-link::before {
+  content: "·";
+  margin: 0 0.3em;
+  padding: 0;
+}
+
+////////////////////////////////
+
+@media (min-width: 768px) {
+  .site-header {
+    margin: $v*9 0 $v*6;
+  }
+  .meta, .footer-title {
+    text-align: right;
+  }
+}
+@media (min-width: 992px) {
+  .post-old {
+    margin-right: 8.33333333%;
+  }
+}

@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="row">
+    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-8 col-sm-push-4">
+      {% for link in site.data.links %}<a class="footer-link tk-apolline-sc" href="{{ link.url }}">{{ link.title }}</a>{% endfor %}
+    </div>
+    <div class="footer-title col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-4 col-sm-pull-8">
+        <a class="tk-apolline-sc" href="/">{{ site.title }}</a>
+    </div>
+  </div>
+</footer>
